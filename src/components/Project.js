@@ -91,7 +91,9 @@ const Project = (props) => {
             rel="noopener noreferrer"
             className="hover"
           >
-            <span className="button">voir le site</span>
+            <span className="btn btn--white btn--animated">
+              <i className="fas fa-eye fa-2x"></i>
+            </span>
           </a>
         </div>
       </motion.div>

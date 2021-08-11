@@ -48,7 +48,7 @@ const Home = () => {
                 bottom: 250,
               }}
             >
-              Coucou biloute
+              Jérémy Boulanger
             </motion.h1>
             <motion.h2
               drag
@@ -64,7 +64,7 @@ const Home = () => {
             </motion.h2>
           </div>
         </div>
-        <ButtonsBottom right={"/project-1"} />
+        <ButtonsBottom right={"/skills"} />
       </motion.div>
     </main>
   );

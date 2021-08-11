@@ -6,11 +6,11 @@ import {
   useHistory,
   useLocation,
 } from "react-router-dom";
-import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Home from "./pages/Home";
 import { Project1, Project2, Project3, Project4 } from "./pages/Projects";
 import { AnimatePresence } from "framer-motion";
+import Skills from "./pages/Skills";
 
 const App = () => {
   const location = useLocation();
@@ -36,13 +36,19 @@ const App = () => {
         case url:
           if (e.wheelDeltaY < 0) {
             setTimeout(() => {
-              history.push("project-1");
+              history.push("skills");
             }, 500);
           }
 
           break;
+
+        case url + "skills":
+          wheelRouter("project-1", "");
+
+          break;
+
         case url + "project-1":
-          wheelRouter("project-2", "");
+          wheelRouter("project-2", "skills");
 
           break;
         case url + "project-2":
@@ -77,11 +83,11 @@ const App = () => {
     <AnimatePresence>
       <Switch location={location} key={location.pathname}>
         <Route exact path="/" component={Home} />
+        <Route exact path="/skills" component={Skills} />
         <Route exact path="/project-1" component={Project1} />
         <Route exact path="/project-2" component={Project2} />
         <Route exact path="/project-3" component={Project3} />
         <Route exact path="/project-4" component={Project4} />
-        <Route exact path="/about" component={About} />
         <Route exact path="/contact" component={Contact} />
         <Redirect to="/" />
       </Switch>

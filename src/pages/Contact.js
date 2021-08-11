@@ -7,6 +7,7 @@ import Mouse from "../components/Mouse";
 import Navigation from "../components/Navigation";
 import SocialNetwork from "../components/SocialNetwork";
 import { motion } from "framer-motion";
+import Pdf from "../data/CV_JEREMY.pdf";
 
 const Contact = () => {
   const pageTransition = {
@@ -41,21 +42,22 @@ const Contact = () => {
         <div className="contact-infos">
           <div className="adress">
             <div className="content">
-              <h4>Adress</h4>
-              <p>12 rue du code</p>
-              <p>33000 Bordeaux</p>
+              <h4>Resume PDF</h4>
+              <a href={Pdf} target="_blank" rel="noopener noreferrer">
+                Download
+              </a>
             </div>
           </div>
           <div className="phone">
             <div className="content">
               <h4>Phone</h4>
-              <CopyToClipboard text="0601010101" className="hover">
+              <CopyToClipboard text="0647556242" className="hover">
                 <p
                   style={{ cursor: "pointer" }}
                   className="clipboard"
-                  onClick={() => alert("copié")}
+                  onClick={() => alert("Now paste it where you want :)")}
                 >
-                  text
+                  Click to copy !
                 </p>
               </CopyToClipboard>
             </div>
@@ -67,9 +69,9 @@ const Contact = () => {
                 <p
                   style={{ cursor: "pointer" }}
                   className="clipboard"
-                  onClick={() => alert("copié")}
+                  onClick={() => alert("Now paste it where you want :)")}
                 >
-                  toto@toto.fr
+                  Click to copy !
                 </p>
               </CopyToClipboard>
             </div>

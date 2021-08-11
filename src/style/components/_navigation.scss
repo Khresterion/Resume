@@ -2,15 +2,17 @@
   position: absolute;
   top: 1rem;
   left: 1.4rem;
-  font-size: 1.4rem;
-  line-height: 28px;
+  font-size: 2rem;
+  line-height: 2.8rem;
   color: $color-4;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
 
   &:before {
     content: "";
     position: absolute;
-    height: 300px;
-    width: 300px;
+    height: 31rem;
+    width: 31rem;
     border-radius: 50%;
     background: $color-3;
     top: -150px;
@@ -38,7 +40,7 @@
     opacity: 0.5;
   }
   ul:hover li:hover {
-    color: $black;
+    color: $color-2;
   }
 
   .nav-portfolio {
@@ -63,7 +65,7 @@
       opacity: 0;
       padding: 0 40px;
       width: 300px;
-      transform: translateX(70px);
+      transform: translateX(8.5rem);
       transition: 0.3s;
       perspective: 500px;
 

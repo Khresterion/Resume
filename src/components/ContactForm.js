@@ -40,7 +40,7 @@ const ContactForm = () => {
       emailS.classList.remove("red");
       messageS.classList.remove("red");
 
-      formMess.innerHTML = "Message en cours d'envoi...";
+      formMess.innerHTML = "Message being sent...";
       formMess.style.background = "#00c1ec";
       formMess.style.opacity = "1";
 
@@ -64,7 +64,7 @@ const ContactForm = () => {
         .then(
           () => {
             formMess.innerHTML =
-              "Message envoyé ! Je vous recontacterai dès que possible.";
+              "Message sent ! I will get back to you as soon as possible.";
 
             document.getElementById("name").classList.remove("error");
             document.getElementById("email").classList.remove("error");
@@ -82,12 +82,11 @@ const ContactForm = () => {
           (err) => {
             console.log(err);
             formMess.style.background = "rgb(253, 87, 87)";
-            formMess.innerHTML =
-              "Une erreur s'est produite, veuillez réessayer.";
+            formMess.innerHTML = "An error has occurred. Please try again.";
           }
         );
     } else {
-      formMess.innerHTML = "Merci de remplir correctement les champs requis *";
+      formMess.innerHTML = "Please fill in the required fields correctly *";
       formMess.style.background = "rgb(253, 87, 87)";
       formMess.style.opacity = "1";
 
@@ -105,7 +104,7 @@ const ContactForm = () => {
 
   return (
     <form className="contact-form">
-      <h2>Contactez-nous</h2>
+      <h2>Need a talk ?</h2>
       <div className="form-content">
         <input
           type="text"
@@ -113,7 +112,7 @@ const ContactForm = () => {
           name="name"
           required
           onChange={(e) => setName(e.target.value)}
-          placeholder="nom *"
+          placeholder="Name *"
           value={name}
         />
         <input
@@ -121,26 +120,26 @@ const ContactForm = () => {
           id="company"
           name="company"
           onChange={(e) => setCompany(e.target.value)}
-          placeholder="société"
+          placeholder="Society"
           value={company}
         />
         <input
-          type="text"
+          type="phone"
           id="phone"
           name="phone"
           onChange={(e) => setPhone(e.target.value)}
-          placeholder="téléphone"
+          placeholder="Phone"
           value={phone}
         />
         <div className="email-content">
-          <label id="not-mail">Email non valide</label>
+          <label id="not-mail">Incorrect Email form</label>
           <input
             type="mail"
             id="email"
             name="email"
             required
             onChange={(e) => setEmail(e.target.value)}
-            placeholder="email *"
+            placeholder="Email *"
             value={email}
           />
         </div>
@@ -148,15 +147,15 @@ const ContactForm = () => {
           id="message"
           name="message"
           onChange={(e) => setMessage(e.target.value)}
-          placeholder="message *"
+          placeholder="Message *"
           value={message}
           required
         />
       </div>
       <input
-        className="button hover"
+        className="btn btn--white btn--animated hover"
         type="submit"
-        value="envoyer"
+        value="Submit"
         onClick={handleSubmit}
       />
       <div className="form-message"></div>

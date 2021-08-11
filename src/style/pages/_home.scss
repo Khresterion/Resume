@@ -4,7 +4,7 @@
   position: absolute;
 
   &:after {
-    content: '';
+    content: "";
     height: 900px;
     width: 900px;
     background: $color-3;
@@ -15,7 +15,7 @@
     z-index: -2;
     animation: homeAnim 15s infinite alternate;
 
-    @media screen and (max-width: 650px){
+    @media screen and (max-width: 650px) {
       height: 400px;
       width: 400px;
       bottom: -270px;
@@ -29,7 +29,7 @@
         transform: scale(1.1);
       }
     }
-    @media screen and (max-width: 430px){
+    @media screen and (max-width: 430px) {
       display: none;
     }
   }
@@ -47,32 +47,38 @@
       user-select: none;
 
       h1 {
-        font-size: 3.7rem;
+        font-size: 4rem;
         position: relative;
         font-family: $font-2;
         color: $black;
+        text-transform: uppercase;
+        letter-spacing: 0.6rem;
 
-        @media screen and (max-width: 650px){
+        &::first-letter {
+          font-size: 12rem;
+        }
+
+        @media screen and (max-width: 650px) {
           font-size: 2rem;
         }
-        @media screen and (min-width: 1200px){
+        @media screen and (min-width: 1200px) {
           font-size: 5rem;
         }
 
         &:before {
-          content: '';
+          content: "";
           position: absolute;
           height: 225px;
           width: 225px;
           border-radius: 50%;
           border: 1px $color-2 solid;
           top: -40px;
-          left: -180px;
+          left: -110px;
           z-index: -1;
           animation: h1Anim 1.5s forwards ease;
           transform: scale(0);
 
-          @media screen and (max-width: 850px){
+          @media screen and (max-width: 850px) {
             height: 110px;
             width: 110px;
             left: -40px;
@@ -87,14 +93,14 @@
         }
       }
       h2 {
-        font-size: 4.2rem;
+        font-size: 2.2rem;
         font-weight: 100;
 
-        @media screen and (max-width: 650px){
+        @media screen and (max-width: 650px) {
           font-size: 2rem;
         }
-        @media screen and (min-width: 1200px){
-          font-size: 5rem;
+        @media screen and (min-width: 1200px) {
+          font-size: 3rem;
         }
       }
     }

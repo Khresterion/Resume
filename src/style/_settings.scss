@@ -10,11 +10,17 @@
 $font-1: "font-1", sans-serif;
 $font-2: "font-2", serif;
 
-$color-1: #fafeff;
-$color-2: #00c1ec;
-$color-3: #e7f7fe;
-$color-4: rgb(141, 141, 141);
-$black: rgb(40, 40, 40);
+// $color-1: #fafeff;
+// $color-2: #00c1ec;
+// $color-3: #e7f7fe;
+// $color-4: rgb(141, 141, 141);
+
+$color-1: #2c5364;
+$color-2: #e49d1a;
+$color-3: #334f5a;
+$color-4: rgb(194, 194, 194);
+
+$black: rgb(20, 20, 20);
 $red: rgb(253, 87, 87);
 $color-bg-1: #2c5364;
 $color-bg-2: #0f2027;
@@ -33,6 +39,8 @@ $color-bg-2: #0f2027;
   }
 }
 html {
+  /* This defines what 1rem is */
+  font-size: 62.5%; /* 1 rem = 10px; 10px/16px = 62.5% */
   scroll-behavior: unset;
 }
 a,
@@ -42,15 +50,15 @@ a:visited {
 body {
   font-family: $font-1;
   height: 100vh;
-  background-color: $color-1;
-  // background-image: radial-gradient(
-  //   circle,
-  //   #2c5364,
-  //   #244654,
-  //   #1d3944,
-  //   #162c35,
-  //   #0f2027
-  // );
+  // background-color: $color-1;
+  background-image: radial-gradient(
+    circle,
+    #2c5364,
+    #244654,
+    #1d3944,
+    #162c35,
+    #0f2027
+  );
   color: $black;
   overflow: hidden;
 

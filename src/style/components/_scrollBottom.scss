@@ -4,7 +4,7 @@
   left: 50%;
   transform: translateX(-50%);
   color: $color-4;
-  font-size: 1.7rem;
+  font-size: 3rem;
   perspective: 40px;
 
   &:hover .sb-main {
@@ -14,7 +14,7 @@
   .sb-main {
     display: grid;
     grid-template-columns: 20px 100px 20px;
-    grid-template-areas: 'a b c';
+    grid-template-areas: "a b c";
     align-items: center;
     justify-items: center;
     width: 150px;
@@ -23,13 +23,13 @@
     transform-origin: bottom;
     pointer-events: none;
 
-    @media screen and (max-width: 430px){
+    @media screen and (max-width: 430px) {
       transform: rotateX(0deg) scaleY(1);
       width: 50px;
     }
     .left,
     .right {
-      @media screen and (max-width: 430px){
+      @media screen and (max-width: 430px) {
         transform: scale(2);
       }
     }
@@ -39,7 +39,7 @@
     p {
       grid-area: b;
 
-      @media screen and (max-width: 430px){
+      @media screen and (max-width: 430px) {
         display: none;
       }
     }
@@ -51,15 +51,15 @@
       transform: rotateX(0deg) scaleY(1);
     }
     span {
-      font-size: 1.5rem;
+      font-size: 2.5rem;
       padding: 0 1rem;
       transition: 0.3s;
       display: inline-block;
       transform: translateY(-1px);
 
       &:hover {
-        color: $black;
-        font-size: 1.8rem;
+        color: $color-2;
+        font-size: 2.8rem;
       }
     }
   }
