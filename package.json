@@ -16,6 +16,7 @@
     "strip-ansi": "^7.0.0",
     "websocket-extensions": "^0.1.4"
   },
+  "homepage":"https://dark-room.fr",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",

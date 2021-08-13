@@ -56,10 +56,17 @@
 
         &::first-letter {
           font-size: 12rem;
+          @media screen and (max-width: 540px) {
+            font-size: 6rem;
+          }
         }
 
         @media screen and (max-width: 650px) {
           font-size: 2rem;
+        }
+        @media screen and (max-width: 500px) {
+          font-size: 1.5rem;
+          text-align: center;
         }
         @media screen and (min-width: 1200px) {
           font-size: 5rem;
@@ -68,8 +75,8 @@
         &:before {
           content: "";
           position: absolute;
-          height: 225px;
-          width: 225px;
+          height: 25rem;
+          width: 25rem;
           border-radius: 50%;
           border: 1px $color-2 solid;
           top: -40px;
@@ -81,7 +88,7 @@
           @media screen and (max-width: 850px) {
             height: 110px;
             width: 110px;
-            left: -40px;
+            left: -20px;
             top: -15px;
           }
 
@@ -98,6 +105,10 @@
 
         @media screen and (max-width: 650px) {
           font-size: 2rem;
+        }
+        @media screen and (max-width: 500px) {
+          font-size: 1.5rem;
+          text-align: center;
         }
         @media screen and (min-width: 1200px) {
           font-size: 3rem;

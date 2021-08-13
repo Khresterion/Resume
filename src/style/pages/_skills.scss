@@ -62,7 +62,7 @@
         text-align: center;
 
         @media screen and (max-width: 650px) {
-          font-size: 2rem;
+          font-size: 2.5rem;
         }
         @media screen and (min-width: 1200px) {
           font-size: 5rem;
@@ -104,6 +104,9 @@
         &:not(:last-child) {
           margin-bottom: 1.5rem;
         }
+        @media screen and (max-width: 540px) {
+          font-size: 1.4rem;
+        }
       }
     }
 
@@ -118,7 +121,7 @@
         text-align: center;
 
         @media screen and (max-width: 650px) {
-          font-size: 2rem;
+          font-size: 2.5rem;
         }
         @media screen and (min-width: 1200px) {
           font-size: 5rem;
@@ -132,6 +135,10 @@
         .fab {
           font-size: 7rem;
           margin: 1rem;
+
+          @media screen and (max-width: 540px) {
+            font-size: 4rem;
+          }
         }
         .fa-html5 {
           color: #e34c26;
@@ -179,6 +186,10 @@
       gap: 0 0;
       grid-template-areas: "skills_main-left" "
       skills_main-right";
+    }
+    @media screen and (max-width: 540px) {
+      margin: 11.5rem 1rem;
+      gap: 1rem 0;
     }
   }
 }

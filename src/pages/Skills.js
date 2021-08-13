@@ -2,7 +2,6 @@ import React from "react";
 import ButtonsBottom from "../components/ButtonsBottom";
 import Mouse from "../components/Mouse";
 import Navigation from "../components/Navigation";
-import SocialNetwork from "../components/SocialNetwork";
 import { motion } from "framer-motion";
 
 const Skills = () => {

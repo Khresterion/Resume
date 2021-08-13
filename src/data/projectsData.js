@@ -6,7 +6,7 @@ export const projectsData = [
     languages: ["React", "Sass"],
     infos:
       "First school project, my online resume. Initially created under bootstrap. Then redone under HTML / PHP and finally under REACT",
-    img: "./assets/img/index.JPG",
+    img: "./assets/img/index.png",
     link: "https://dark-room.fr/",
   },
   {

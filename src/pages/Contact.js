@@ -8,6 +8,7 @@ import Navigation from "../components/Navigation";
 import SocialNetwork from "../components/SocialNetwork";
 import { motion } from "framer-motion";
 import Pdf from "../data/CV_JEREMY.pdf";
+import Copyright from "../components/Copyright";
 
 const Contact = () => {
   const pageTransition = {
@@ -40,7 +41,7 @@ const Contact = () => {
         <Logo />
         <ContactForm />
         <div className="contact-infos">
-          <div className="adress">
+          <div className="address">
             <div className="content">
               <h4>Resume PDF</h4>
               <a href={Pdf} target="_blank" rel="noopener noreferrer">
@@ -77,9 +78,7 @@ const Contact = () => {
             </div>
           </div>
           <SocialNetwork />
-          <div className="credits">
-            <p>Dark Room - 2021</p>
-          </div>
+          <Copyright />
         </div>
         <ButtonsBottom left={"/project-4"} />
       </motion.div>

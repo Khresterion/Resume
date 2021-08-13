@@ -42,6 +42,10 @@
   .logo {
     top: 8px;
     right: 1rem;
+
+    @media screen and (max-width: 440px) {
+      display: none;
+    }
   }
 
   .contact-form {
@@ -206,7 +210,7 @@
       grid-template-areas:
         "b b b c c c"
         "d d d d d d"
-        "e e e e f f";
+        "e e e e e f";
     }
     @media screen and (max-height: 500px) {
       display: none;
@@ -314,6 +318,9 @@
         font-size: 0.7rem;
         margin-right: 1rem;
         grid-area: f;
+      }
+      @media screen and (max-width: 540px) {
+        display: none;
       }
       p {
         font-size: 2rem;
