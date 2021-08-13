@@ -5,20 +5,20 @@
 
   &:after {
     content: "";
-    height: 900px;
-    width: 900px;
+    height: 90rem;
+    width: 90rem;
     background: $color-3;
     border-radius: 50%;
     position: absolute;
-    bottom: -480px;
+    bottom: -48rem;
     right: 0px;
     z-index: -2;
     animation: homeAnim 15s infinite alternate;
 
     @media screen and (max-width: 650px) {
-      height: 400px;
-      width: 400px;
-      bottom: -270px;
+      height: 40rem;
+      width: 40rem;
+      bottom: -27rem;
     }
 
     @keyframes homeAnim {
@@ -79,17 +79,17 @@
           width: 25rem;
           border-radius: 50%;
           border: 1px $color-2 solid;
-          top: -40px;
-          left: -110px;
+          top: -4rem;
+          left: -11rem;
           z-index: -1;
           animation: h1Anim 1.5s forwards ease;
           transform: scale(0);
 
           @media screen and (max-width: 850px) {
-            height: 110px;
-            width: 110px;
-            left: -20px;
-            top: -15px;
+            height: 11rem;
+            width: 11rem;
+            left: -2rem;
+            top: -1.5rem;
           }
 
           @keyframes h1Anim {

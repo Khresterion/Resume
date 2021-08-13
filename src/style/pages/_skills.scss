@@ -5,20 +5,20 @@
 
   &:after {
     content: "";
-    height: 900px;
-    width: 900px;
+    height: 90rem;
+    width: 90rem;
     background: $color-3;
     border-radius: 50%;
     position: absolute;
-    bottom: -80px;
-    right: -410px;
+    bottom: -8rem;
+    right: -41rem;
     z-index: -2;
     animation: homeAnim 15s infinite alternate;
 
     @media screen and (max-width: 650px) {
-      height: 400px;
-      width: 400px;
-      bottom: -270px;
+      height: 40rem;
+      width: 40rem;
+      bottom: -27rem;
     }
 
     @keyframes homeAnim {
@@ -35,21 +35,12 @@
   }
 
   .skills-main {
-    // display: grid;
-    // align-items: center;
-    // justify-items: center;
-    // padding-left: 1rem;
-    // width: auto;
-    // height: 95%;
-    // overflow: hidden;
     margin: 16.5rem 5rem;
-
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     gap: 10rem 0;
     grid-template-areas: "skills_main-left" "skills_main-right";
-    // grid-area: 1 / 1 / 2 / 2;
 
     .skills_main-right {
       grid-area: skills_main-right;
@@ -75,8 +66,8 @@
           width: 25rem;
           border-radius: 50%;
           border: 1px $color-2 solid;
-          top: -40px;
-          left: 610px;
+          top: -4rem;
+          left: 61rem;
           z-index: -1;
           animation: h1Anim 1.5s forwards ease;
           transform: scale(0);
@@ -84,8 +75,8 @@
           @media screen and (max-width: 850px) {
             height: 10rem;
             width: 10rem;
-            left: -40px;
-            top: -15px;
+            left: -4rem;
+            top: -1.5rem;
           }
 
           @keyframes h1Anim {
